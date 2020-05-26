@@ -2,7 +2,7 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 import {connect} from 'react-redux';
 import './header.styles.scss';
-import axiosWithAuth from '../../utils/axiosWithAuth'
+import {axiosWithAuth} from '../../utils/axiosWithAuth'
 // import {ReactComponent as Logo} from '../../assets/original.svg'
 import CartIcon from '../cart-icon/cart-icon.component'
 import CartDropdown from '../cart-dropdown/cart-dropdown.component'
@@ -13,8 +13,8 @@ const Header = ({ currentUser }) => (
             <Logo className='logo'/>
         </Link> */}
         <div className='options'>
-            <Link className='option' to='/shop'>
-                SHOP
+            <Link className='option' to='/Classes'>
+                CLASSES
             </Link>
             <Link className='option' to='/shop'>
                 CONTACT
