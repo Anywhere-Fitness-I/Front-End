@@ -3,15 +3,15 @@ import {Link} from 'react-router-dom';
 import {connect} from 'react-redux';
 import './header.styles.scss';
 import axiosWithAuth from '../../utils/axiosWithAuth'
-import {ReactComponent as Logo} from '../../assets/original.svg'
+// import {ReactComponent as Logo} from '../../assets/original.svg'
 import CartIcon from '../cart-icon/cart-icon.component'
 import CartDropdown from '../cart-dropdown/cart-dropdown.component'
 
 const Header = ({ currentUser }) => (
     <div className='header'>
-        <Link className='logo-container' to='/'>
+        {/* <Link className='logo-container' to='/'>
             <Logo className='logo'/>
-        </Link>
+        </Link> */}
         <div className='options'>
             <Link className='option' to='/shop'>
                 SHOP
