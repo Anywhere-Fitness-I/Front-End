@@ -112,6 +112,7 @@ function App() {
 
   return (
     <Router>
+      <h1>test</h1>
   <MainContainer>
     <div className="App">
       <Route path='/SignUp'>
