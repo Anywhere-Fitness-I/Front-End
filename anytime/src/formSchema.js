@@ -22,9 +22,6 @@ const formSchema = yup.object().shape({
     confirmPassword: yup
         .string()
         .required('Please confirm your password'),
-        // .test('passwords-match', "Passwords do not match", function(value){
-        //     return this.parent.password == value;
-        // }),
     role: yup
         .string()
         .required()
