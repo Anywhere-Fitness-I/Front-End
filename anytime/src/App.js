@@ -118,7 +118,7 @@ function App() {
       <Route path='/SignUp'>
         <ClientSignUp clickInstructor={clickInstructor} disabled={disabled} onSubmit={onSubmit} signUp={signUp} onSignUpChange={onSignUpChange} errors={formErrors}/>
       </Route>
-      <Route path='/'>
+      <Route exact path='/'>
         <ClientSignIn onSubmit={onSubmit} signIn={signIn} onSignInChange={onSignInChange}/>
       </Route>
     </div>
