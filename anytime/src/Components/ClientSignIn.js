@@ -2,29 +2,35 @@ import React from 'react';
 import {Link} from 'react-router-dom'
 import Blankprofile from '../Images/Blankprofile.png';
 import styled from 'styled-components';
+import workoutclassroom from '../Images/workoutclassroom.jpg'
 
 function ClientSignIn(props) {
     const {signIn, onSignInChange} = props
     return (
-        <form>
-
-        <MainDiv>
-            <h2>Sign In</h2>
-        <SignInContainer>
-            <input placeholder="Email" name="email" value={signIn.email} onChange={onSignInChange}/>
-            <input placeholder="Password" name="password" value={signIn.password} onChange={onSignInChange}/>
-            <button>Sign In</button>
-        </SignInContainer>
-        <SignUp>
-            <Link to='/SignUp'>
-            <h3>Need to sign up?</h3> 
-            </Link>
-        </SignUp>
-        </MainDiv>
-
-        </form>
+    <form>
+        <FormContainer>
+            <MainDiv>
+                <h2>Sign In</h2>
+            <SignInContainer>
+                <input placeholder="Email" name="email" value={signIn.email} onChange={onSignInChange}/>
+                <input placeholder="Password" name="password" value={signIn.password} onChange={onSignInChange}/>
+                <button>Sign In</button>
+            </SignInContainer>
+            <SignUp>
+                <Link to='/SignUp'>
+                <h3>Need to sign up?</h3> 
+                </Link>
+            </SignUp>
+            </MainDiv>
+        </FormContainer>
+    </form>
     )
 }
+const FormContainer = styled.div`
+    background-image: url(${workoutclassroom});
+    background-size: 100% 100%; 
+
+`
 const MainDiv = styled.div`
     text-align: center;
     outline: none;
@@ -43,7 +49,7 @@ const SignInContainer = styled.div`
     input{
         border: solid 1px #7146b8;
         border-radius: 4px;
-        width:7rem;
+        width:18%;
         outline: none;
     }
 
@@ -58,7 +64,7 @@ const SignUp = styled.div`
         
         h3 {
         color:white;
-        font-size: .5rem;
+        font-size: 50%;
     }
 
 `

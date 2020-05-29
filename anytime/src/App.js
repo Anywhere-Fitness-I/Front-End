@@ -127,8 +127,7 @@ function App() {
   );
 }
 const MainContainer = styled.div`
-    background-image: url(${workoutclassroom});
-    background-size: cover;
-
+    /* background-image: url(${workoutclassroom});
+    background-size: 100% 100%; */
 `
 export default App;
