@@ -14,11 +14,13 @@ function ClientSignUP(props) {
             </BlankImage>
             <NameContainer>
                 <input placeholder="First Name" name="firstName" value={signUp.firstname} onChange={onSignUpChange} className='firstname'/>
-                <div className='errors'>{errors.firstName}</div>
+                    
                 <input placeholder="Last Name" name="lastName" value={signUp.lastname} onChange={onSignUpChange}/>
-                <div className='errors'>{errors.lastName}</div>
+                 
             </NameContainer>
             <FieldContainer>
+            <div className='errors'>{errors.firstName}</div>
+            <div className='errors'>{errors.lastName}</div>
                 <input placeholder="Email" name="email" value={signUp.email} onChange={onSignUpChange}/>
                 <div className='errors'>{errors.email}</div>
             </FieldContainer>
