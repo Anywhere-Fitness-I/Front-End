@@ -20,7 +20,7 @@ function ClientSignIn(props) {
                 <Link to='/SignUp'>
                 <h3>Need to sign up?</h3> 
                 </Link>
-            </SignUp>
+            </SignUp> 
             </MainDiv>
         </FormContainer>
     </form>
