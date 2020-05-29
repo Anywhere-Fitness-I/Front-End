@@ -112,13 +112,13 @@ function App() {
 
   return (
     <Router>
-      <h1>test</h1>
+  
   <MainContainer>
     <div className="App">
       <Route path='/SignUp'>
         <ClientSignUp clickInstructor={clickInstructor} disabled={disabled} onSubmit={onSubmit} signUp={signUp} onSignUpChange={onSignUpChange} errors={formErrors}/>
       </Route>
-      <Route path='/SignIn'>
+      <Route exact path='/'>
         <ClientSignIn onSubmit={onSubmit} signIn={signIn} onSignInChange={onSignInChange}/>
       </Route>
     </div>

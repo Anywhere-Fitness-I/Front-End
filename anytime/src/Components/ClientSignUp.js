@@ -44,7 +44,7 @@ function ClientSignUP(props) {
             <button disabled={disabled}>Submit</button>
             </SubmitButton>
             <SignIn>
-                <Link to='/SignIn'>
+                <Link to='/'>
                     <h3>Already have an account?</h3> 
                 </Link>
             </SignIn>
