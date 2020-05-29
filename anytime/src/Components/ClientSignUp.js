@@ -2,8 +2,7 @@ import React from 'react';
 import {Link} from 'react-router-dom'
 import styled from 'styled-components'
 import Blankprofile from '../Images/Blankprofile.png';
-
-
+import workoutclassroom from '../Images/workoutclassroom.jpg'
 
 function ClientSignUP(props) {
     const {signUp, onSignUpChange, onSubmit, disabled, errors, clickClient, clickInstructor} = props
@@ -58,6 +57,8 @@ const MainDiv = styled.div`
     text-align: center;
     outline: none;
     padding: 10%;
+    background-image: url(${workoutclassroom});
+    background-size: 100% 100%;
 
     .errors{
         color: red;
@@ -68,7 +69,7 @@ const Role = styled.div`
 
     .radio{
         height: 18px;
-        width: 5rem;
+        width: 14.7%;
         -webkit-appearance: none;
         border: solid 1px #7146b8;
     }
@@ -115,7 +116,7 @@ const NameContainer = styled.div`
     input {
         border: solid 1px #7146b8;
         border-radius: 4px;
-        width: 4.9rem;
+        width: 14.7%;
         outline: none;
     }
 `
@@ -125,19 +126,17 @@ const BlankImage = styled.div`
     img{
         border-radius: 50%;
         height: 140px;
-         width: 140px;
+        width: 140px;
 
     }
-    
 `
 const FieldContainer = styled.div`
 
     input{
         border: solid 1px #7146b8;
         border-radius: 4px;
-        width: 10rem;
-        outline: none;
-        
+        width: 30%;
+        outline: none;  
     }
 `
 const SubmitButton = styled.div`
